@@ -1,0 +1,4 @@
+http://192.168.99.121:8081/index.html (Status: 200)
+http://192.168.99.121:8081/. (Status: 200)
+http://192.168.99.121:8081/collect.php (Status: 200)
+http://192.168.99.121:8081/changelog (Status: 200)

@@ -1,0 +1,20 @@
+# Nmap 7.70 scan initiated Wed Mar 27 15:56:21 2019 as: nmap -sV --script http-wordpress-enum --script-args search-limit=all -oN nmap-wordpress-enum 192.168.99.120
+Nmap scan report for 192.168.99.120
+Host is up (0.0021s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+| http-wordpress-enum: 
+| Search limited to top 50546 themes/plugins
+|   themes
+|     twentyfifteen 2.0
+|     twentysixteen 1.5
+|     twentyseventeen 1.7
+|   plugins
+|_    akismet 4.0.8
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Mar 27 15:57:54 2019 -- 1 IP address (1 host up) scanned in 92.86 seconds

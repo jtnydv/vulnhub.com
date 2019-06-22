@@ -1,0 +1,7 @@
+# Nmap 7.70 scan initiated Wed Mar 27 16:22:46 2019 as: nmap -Pn -sU -e eth1 -oN nmap-udp-all 192.168.99.120
+Nmap scan report for 192.168.99.120
+Host is up (0.0019s latency).
+All 1000 scanned ports on 192.168.99.120 are closed (957) or open|filtered (43)
+MAC Address: 08:00:27:18:12:86 (Oracle VirtualBox virtual NIC)
+
+# Nmap done at Wed Mar 27 16:40:17 2019 -- 1 IP address (1 host up) scanned in 1051.40 seconds

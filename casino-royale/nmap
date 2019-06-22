@@ -1,0 +1,19 @@
+# Nmap 7.70 scan initiated Wed Mar 27 19:25:42 2019 as: nmap -Pn -e eth1 -oN nmap 192.168.99.121
+Nmap scan report for 192.168.99.121
+Host is up (0.0075s latency).
+Not shown: 989 closed ports
+PORT      STATE    SERVICE
+21/tcp    open     ftp
+25/tcp    open     smtp
+80/tcp    open     http
+135/tcp   filtered msrpc
+139/tcp   filtered netbios-ssn
+445/tcp   filtered microsoft-ds
+1110/tcp  filtered nfsd-status
+2869/tcp  filtered icslap
+3389/tcp  filtered ms-wbt-server
+8081/tcp  open     blackice-icecap
+19780/tcp filtered unknown
+MAC Address: 00:0C:29:45:5C:3E (VMware)
+
+# Nmap done at Wed Mar 27 19:25:56 2019 -- 1 IP address (1 host up) scanned in 14.90 seconds

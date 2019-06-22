@@ -1,0 +1,142 @@
+_______________________________________________________________
+        __          _______   _____
+        \ \        / /  __ \ / ____|
+         \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+          \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+           \  /\  /  | |     ____) | (__| (_| | | | |
+            \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+        WordPress Security Scanner by the WPScan Team
+                       Version 3.4.5
+          Sponsored by Sucuri - https://sucuri.net
+      @_WPScan_, @ethicalhack3r, @erwan_lr, @_FireFart_
+_______________________________________________________________
+
+[+] URL: http://192.168.99.120/
+[+] Started: Wed Mar 27 15:38:37 2019
+
+Interesting Finding(s):
+
+[+] http://192.168.99.120/
+ | Interesting Entry: Server: Apache/2.4.29 (Ubuntu)
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[+] http://192.168.99.120/xmlrpc.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access
+
+[+] http://192.168.99.120/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[+] Upload directory has listing enabled: http://192.168.99.120/wp-content/uploads/
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[+] http://192.168.99.120/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[+] WordPress version 4.9.8 identified (Insecure, released on 2018-08-02).
+ | Detected By: Rss Generator (Passive Detection)
+ |  - http://192.168.99.120/index.php/feed/, <generator>https://wordpress.org/?v=4.9.8</generator>
+ |  - http://192.168.99.120/index.php/comments/feed/, <generator>https://wordpress.org/?v=4.9.8</generator>
+ |
+ | [!] 7 vulnerabilities identified:
+ |
+ | [!] Title: WordPress <= 5.0 - Authenticated File Delete
+ |     Fixed in: 4.9.9
+ |     References:
+ |      - https://wpvulndb.com/vulnerabilities/9169
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20147
+ |      - https://wordpress.org/news/2018/12/wordpress-5-0-1-security-release/
+ |
+ | [!] Title: WordPress <= 5.0 - Authenticated Post Type Bypass
+ |     Fixed in: 4.9.9
+ |     References:
+ |      - https://wpvulndb.com/vulnerabilities/9170
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20152
+ |      - https://wordpress.org/news/2018/12/wordpress-5-0-1-security-release/
+ |      - https://blog.ripstech.com/2018/wordpress-post-type-privilege-escalation/
+ |
+ | [!] Title: WordPress <= 5.0 - PHP Object Injection via Meta Data
+ |     Fixed in: 4.9.9
+ |     References:
+ |      - https://wpvulndb.com/vulnerabilities/9171
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20148
+ |      - https://wordpress.org/news/2018/12/wordpress-5-0-1-security-release/
+ |
+ | [!] Title: WordPress <= 5.0 - Authenticated Cross-Site Scripting (XSS)
+ |     Fixed in: 4.9.9
+ |     References:
+ |      - https://wpvulndb.com/vulnerabilities/9172
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20153
+ |      - https://wordpress.org/news/2018/12/wordpress-5-0-1-security-release/
+ |
+ | [!] Title: WordPress <= 5.0 - Cross-Site Scripting (XSS) that could affect plugins
+ |     Fixed in: 4.9.9
+ |     References:
+ |      - https://wpvulndb.com/vulnerabilities/9173
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20150
+ |      - https://wordpress.org/news/2018/12/wordpress-5-0-1-security-release/
+ |      - https://github.com/WordPress/WordPress/commit/fb3c6ea0618fcb9a51d4f2c1940e9efcd4a2d460
+ |
+ | [!] Title: WordPress <= 5.0 - User Activation Screen Search Engine Indexing
+ |     Fixed in: 4.9.9
+ |     References:
+ |      - https://wpvulndb.com/vulnerabilities/9174
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20151
+ |      - https://wordpress.org/news/2018/12/wordpress-5-0-1-security-release/
+ |
+ | [!] Title: WordPress <= 5.0 - File Upload to XSS on Apache Web Servers
+ |     Fixed in: 4.9.9
+ |     References:
+ |      - https://wpvulndb.com/vulnerabilities/9175
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20149
+ |      - https://wordpress.org/news/2018/12/wordpress-5-0-1-security-release/
+ |      - https://github.com/WordPress/WordPress/commit/246a70bdbfac3bd45ff71c7941deef1bb206b19a
+
+[+] WordPress theme in use: twentyseventeen
+ | Location: http://192.168.99.120/wp-content/themes/twentyseventeen/
+ | Last Updated: 2019-01-09T00:00:00.000Z
+ | Readme: http://192.168.99.120/wp-content/themes/twentyseventeen/README.txt
+ | [!] The version is out of date, the latest version is 2.0
+ | Style URL: http://192.168.99.120/wp-content/themes/twentyseventeen/style.css?ver=4.9.8
+ | Style Name: Twenty Seventeen
+ | Style URI: https://wordpress.org/themes/twentyseventeen/
+ | Description: Twenty Seventeen brings your site to life with header video and immersive featured images. With a fo...
+ | Author: the WordPress team
+ | Author URI: https://wordpress.org/
+ |
+ | Detected By: Css Style (Passive Detection)
+ |
+ | Version: 1.7 (80% confidence)
+ | Detected By: Style (Passive Detection)
+ |  - http://192.168.99.120/wp-content/themes/twentyseventeen/style.css?ver=4.9.8, Match: 'Version: 1.7'
+
+
+[i] User(s) Identified:
+
+[+] webdeveloper
+ | Detected By: Rss Generator (Passive Detection)
+ | Confirmed By:
+ |  Author Id Brute Forcing - Author Pattern (Aggressive Detection)
+ |  Login Error Messages (Aggressive Detection)
+
+[+] Finished: Wed Mar 27 15:38:49 2019
+[+] Requests Done: 51
+[+] Cached Requests: 6
+[+] Data Sent: 9.59 KB
+[+] Data Received: 798.737 KB
+[+] Memory used: 23.676 MB
+[+] Elapsed time: 00:00:12
