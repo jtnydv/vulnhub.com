@@ -1,0 +1,29 @@
+# Nmap 7.70 scan initiated Wed Feb 20 00:17:22 2019 as: nmap -A -sC -sV -p80,111,3306,38447 -e eth1 -oN nmap-detailed 192.168.99.102
+Nmap scan report for 192.168.99.102
+Host is up (0.00087s latency).
+
+PORT      STATE SERVICE VERSION
+80/tcp    open  http    Apache httpd 2.4.10 ((Debian))
+|_http-server-header: Apache/2.4.10 (Debian)
+|_http-title: PwnLab Intranet Image Hosting
+111/tcp   open  rpcbind 2-4 (RPC #100000)
+| rpcinfo: 
+|   program version   port/proto  service
+|   100000  2,3,4        111/tcp  rpcbind
+|   100000  2,3,4        111/udp  rpcbind
+|   100024  1          38447/tcp  status
+|_  100024  1          42320/udp  status
+3306/tcp  open  mysql   MySQL 5.5.47-0+deb8u1
+| mysql-info: 
+|   Protocol: 10
+|   Version: 5.5.47-0+deb8u1
+|   Thread ID: 46
+|   Capabilities flags: 63487
+|   Some Capabilities: DontAllowDatabaseTableColumn, Speaks41ProtocolNew, LongPassword, ConnectWithDatabase, IgnoreSpaceBeforeParenthesis, IgnoreSigpipes, ODBCClient, FoundRows, Speaks41ProtocolOld, SupportsTransactions, LongColumnFlag, InteractiveClient, Support41Auth, SupportsLoadDataLocal, SupportsCompression, SupportsMultipleResults, SupportsMultipleStatments, SupportsAuthPlugins
+|   Status: Autocommit
+|   Salt: XZ9LS=v^PYMWLVLZaWoL
+|_  Auth Plugin Name: 88
+38447/tcp open  status  1 (RPC #100024)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Feb 20 00:17:37 2019 -- 1 IP address (1 host up) scanned in 15.24 seconds

@@ -1,0 +1,11 @@
+# Nmap 7.70 scan initiated Thu Feb 21 22:47:37 2019 as: nmap -Pn -p- -e eth1 -oN nmap-all 192.168.99.100
+Nmap scan report for kioptrix3.com (192.168.99.100)
+Host is up (0.0018s latency).
+Not shown: 65531 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+3306/tcp open  mysql
+5355/tcp open  llmnr
+
+# Nmap done at Thu Feb 21 22:47:50 2019 -- 1 IP address (1 host up) scanned in 12.83 seconds

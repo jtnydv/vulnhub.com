@@ -1,0 +1,8 @@
+# Nmap 7.70 scan initiated Sun Mar  3 15:21:31 2019 as: nmap -Pn -e eth1 -oN nmap 192.168.99.103
+Nmap scan report for 192.168.99.103
+Host is up (0.00074s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE
+80/tcp open  http
+
+# Nmap done at Sun Mar  3 15:21:31 2019 -- 1 IP address (1 host up) scanned in 0.72 seconds

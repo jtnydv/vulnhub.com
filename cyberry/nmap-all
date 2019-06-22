@@ -1,0 +1,10 @@
+# Nmap 7.70 scan initiated Tue Mar  5 20:17:58 2019 as: nmap -Pn -p- -e eth1 -oN nmap-all 192.168.99.106
+Nmap scan report for 192.168.99.106
+Host is up (0.021s latency).
+Not shown: 65532 filtered ports
+PORT   STATE SERVICE
+21/tcp open  ftp
+22/tcp open  ssh
+80/tcp open  http
+
+# Nmap done at Tue Mar  5 20:33:49 2019 -- 1 IP address (1 host up) scanned in 951.03 seconds

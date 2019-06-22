@@ -1,0 +1,5 @@
+http://192.168.99.106/config.php (Status: 200)
+http://192.168.99.106/login.php (Status: 200)
+http://192.168.99.106/register.php (Status: 200)
+http://192.168.99.106/logout.php (Status: 302)
+http://192.168.99.106/welcome.php (Status: 302)

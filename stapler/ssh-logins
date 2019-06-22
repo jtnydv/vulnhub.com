@@ -1,0 +1,4 @@
+[22][ssh] host: 192.168.99.100   login: MFrei   password: letmein
+[22][ssh] host: 192.168.99.100   login: Drew   password: qwerty
+sshpass -p thisimypassword ssh JKanode@localhost
+sshpass -p JZQuyIN5 peter@localhost

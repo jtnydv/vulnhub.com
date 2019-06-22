@@ -1,0 +1,23 @@
+=====================================================
+Gobuster v2.0.1              OJ Reeves (@TheColonial)
+=====================================================
+[+] Mode         : dir
+[+] Url/Domain   : http://kioptrix3.com/
+[+] Threads      : 100
+[+] Wordlist     : /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt
+[+] Status codes : 200,204,301,302,307,403
+[+] Expanded     : true
+[+] Timeout      : 10s
+=====================================================
+2019/02/14 18:20:57 Starting gobuster
+=====================================================
+http://kioptrix3.com/gallery (Status: 301) JUICY
+http://kioptrix3.com/core (Status: 301)
+http://kioptrix3.com/style (Status: 301)
+http://kioptrix3.com/cache (Status: 301)
+http://kioptrix3.com/modules (Status: 301) JUICY
+http://kioptrix3.com/data (Status: 403)
+http://kioptrix3.com/phpmyadmin (Status: 301) JUICY
+=====================================================
+2019/02/14 18:27:12 Finished
+=====================================================

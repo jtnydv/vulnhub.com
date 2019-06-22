@@ -1,0 +1,18 @@
+# Nmap 7.70 scan initiated Wed Feb 20 23:55:07 2019 as: nmap -sU -sV -sC -p67,68,111,4500 -oN nmap-udp 192.168.99.102
+Nmap scan report for 192.168.99.102
+Host is up (0.00079s latency).
+
+PORT     STATE         SERVICE   VERSION
+67/udp   open|filtered dhcps
+68/udp   open|filtered dhcpc
+111/udp  open          rpcbind   2-4 (RPC #100000)
+| rpcinfo: 
+|   program version   port/proto  service
+|   100000  2,3,4        111/tcp  rpcbind
+|   100000  2,3,4        111/udp  rpcbind
+|   100024  1          41064/udp  status
+|_  100024  1          55188/tcp  status
+4500/udp open|filtered nat-t-ike
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Feb 20 23:56:51 2019 -- 1 IP address (1 host up) scanned in 104.23 seconds

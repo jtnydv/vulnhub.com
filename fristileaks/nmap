@@ -1,0 +1,15 @@
+# Nmap 7.70 scan initiated Fri Feb 15 22:07:02 2019 as: nmap -sV -sC -Pn -p- -e eth1 -oN nmap 192.168.99.103
+Nmap scan report for 192.168.99.103
+Host is up (0.015s latency).
+Not shown: 65534 filtered ports
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.2.15 ((CentOS) DAV/2 PHP/5.3.3)
+| http-methods: 
+|_  Potentially risky methods: TRACE
+| http-robots.txt: 3 disallowed entries 
+|_/cola /sisi /beer
+|_http-server-header: Apache/2.2.15 (CentOS) DAV/2 PHP/5.3.3
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8).
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Feb 15 22:30:55 2019 -- 1 IP address (1 host up) scanned in 1432.83 seconds

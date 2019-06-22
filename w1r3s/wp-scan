@@ -1,0 +1,27 @@
+_______________________________________________________________
+        __          _______   _____
+        \ \        / /  __ \ / ____|
+         \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+          \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+           \  /\  /  | |     ____) | (__| (_| | | | |
+            \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+        WordPress Security Scanner by the WPScan Team
+                       Version 3.4.4
+          Sponsored by Sucuri - https://sucuri.net
+      @_WPScan_, @ethicalhack3r, @erwan_lr, @_FireFart_
+_______________________________________________________________
+
+Scan Aborted: Unable to identify the wp-content dir, please supply it with --wp-content-dir
+Trace: /usr/share/rubygems-integration/all/gems/wpscan-3.4.4/app/controllers/custom_directories.rb:19:in `before_scan'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.0.41.3/lib/cms_scanner/controllers.rb:43:in `each'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.0.41.3/lib/cms_scanner/controllers.rb:43:in `block in run'
+/usr/lib/ruby/2.5.0/timeout.rb:76:in `timeout'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.0.41.3/lib/cms_scanner/controllers.rb:42:in `run'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.0.41.3/lib/cms_scanner.rb:139:in `run'
+/usr/share/rubygems-integration/all/gems/wpscan-3.4.4/bin/wpscan:15:in `block in <top (required)>'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.0.41.3/lib/cms_scanner.rb:130:in `initialize'
+/usr/share/rubygems-integration/all/gems/wpscan-3.4.4/bin/wpscan:5:in `new'
+/usr/share/rubygems-integration/all/gems/wpscan-3.4.4/bin/wpscan:5:in `<top (required)>'
+/usr/bin/wpscan:23:in `load'
+/usr/bin/wpscan:23:in `<main>'

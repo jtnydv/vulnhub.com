@@ -1,0 +1,11 @@
+# Nmap 7.70 scan initiated Wed Feb 20 00:13:06 2019 as: nmap -Pn -p- -eeth1 -oN nmap 192.168.99.102
+Nmap scan report for 192.168.99.102
+Host is up (0.0032s latency).
+Not shown: 65531 closed ports
+PORT      STATE SERVICE
+80/tcp    open  http
+111/tcp   open  rpcbind
+3306/tcp  open  mysql
+38447/tcp open  unknown
+
+# Nmap done at Wed Feb 20 00:13:19 2019 -- 1 IP address (1 host up) scanned in 12.88 seconds
